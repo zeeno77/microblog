@@ -3,12 +3,14 @@ package main
 import (
 	"log"
 
-	"github.com/zeeno77/microblog/bd"
-	"github.com/zeeno77/microblog/handlers"
+	//	"github.com/zeeno77/microblog/db"
+	//	"github.com/zeeno77/microblog/handlers"
+	"microblog/db"
+	"microblog/handlers"
 )
 
 func main() {
-	if bd.ChequeoConnection() == 0 {
+	if db.ChequeoConnection() == 0 {
 		log.Fatal("Sin conexión a la BD")
 		return
 	}

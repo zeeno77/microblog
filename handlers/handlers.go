@@ -6,6 +6,7 @@ import (
 	"os"
 
 	"github.com/gorilla/mux"
+	"github.com/rs/cors"
 )
 
 /*Manejadores: seteo mi puerto, el handler y pongo a escuchar al servidor*/
