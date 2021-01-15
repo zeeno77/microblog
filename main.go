@@ -5,8 +5,6 @@ import (
 
 	"github.com/zeeno77/microblog/db"
 	"github.com/zeeno77/microblog/handlers"
-	//"github.com/zeeno77/microblog/db"
-	//"github.com/zeeno77/microblog/handlers"
 )
 
 func main() {
