@@ -2,9 +2,10 @@ package routers
 
 import (
 	"encoding/json"
-	"microblog/db"
-	"microblog/models"
 	"net/http"
+
+	"github.com/zeeno77/microblog/db"
+	"github.com/zeeno77/microblog/models"
 )
 
 /*Registro es la función para crear en la db el registro de usuario*/

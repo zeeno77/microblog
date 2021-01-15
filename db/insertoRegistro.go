@@ -2,8 +2,9 @@ package db
 
 import (
 	"context"
-	"microblog/models"
 	"time"
+
+	"github.com/zeeno77/microblog/models"
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
