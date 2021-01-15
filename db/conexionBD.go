@@ -12,8 +12,6 @@ import (
 var MongoCN = ConectarBD()
 var clientOptions = options.Client().ApplyURI("mongodb+srv://avalithAdmin:hYAvRLQWUEFxt95g@avalithgotwiterdb.qgmse.mongodb.net/microblog")
 
-//var clientOptions = options.Client().ApplyURI("mongodb+srv://avalithAdmin:hYAvRLQWUEFxt95g@avalithgotwiterdb.qgmse.mongodb.net/microblog?retryWrites=true&w=majority")
-
 /*ConectarBD es la función que me permite conectar a la base de datos*/
 func ConectarBD() *mongo.Client {
 	client, err := mongo.Connect(context.TODO(), clientOptions)
