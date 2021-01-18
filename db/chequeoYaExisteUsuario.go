@@ -12,7 +12,7 @@ import (
 /*ChequeoYaExisteUsuario recibe un email de parámetro y chequea si ya está en la db*/
 func ChequeoYaExisteUsuario(email string) (models.Usuario, bool, string) {
 	ctx, _ := context.WithTimeout(context.Background(), 15*time.Second)
-	db := MongoCN.Database("microblog")
+	db := MongoCN.Database("microblogging")
 	col := db.Collection("usuarios")
 
 	// M es una función que formatea o mapea a bson lo que recibe como json
