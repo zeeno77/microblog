@@ -24,9 +24,7 @@ func BorrarTweet(w http.ResponseWriter, r *http.Request) {
 
 	println(twt.Mensaje)
 
-	status, err = db.BorroTweet(twt)
-	//status, err = db.BorroTweet(twt, IDUsuario)
-	//status, err = db.ModificoRegistro(twt, IDUsuario)
+	status, err = db.BorroTweet(twt, IDUsuario)
 	//IDUsuario es la variable global que seteamos antes con el ID
 	if err != nil {
 		http.Error(w, "Ocurrió un error al intentar modificar el registro. Intente nuevamente "+err.Error(), 400)
